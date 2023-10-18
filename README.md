@@ -28,7 +28,11 @@ DL_test
 - **Data**
 
 - **參數設定**
+- batch_size=128
+- num_classes=10
+- epoch=10
 
-- **Model**v
+- **Model**
+- DNN
 
   
