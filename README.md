@@ -23,8 +23,7 @@ This project is a deep learning practice testing to  handwriting recognition
 
 ## 目錄介绍
 
-- **Data**
-  MNIST Dataset
+- **Data** : MNIST Dataset
 
 - **參數設定**
 - batch_size=128
