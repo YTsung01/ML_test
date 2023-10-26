@@ -30,7 +30,6 @@ This project is a deep learning practice testing to  handwriting recognition
 - num_classes=10
 - epoch=10
 
-- **Model**
-- DNN
+- **Model** : Deep Neural Networks, DNN
 
   
