@@ -6,8 +6,7 @@ This project is a machine learning testing that uses IMU datas to detect falls.
 
 ## 目錄介绍
 
-- **Data**
-- IMU data
+- **Data** :IMU data
 
 - **Features**
 6 axis:X,Y,Z,norm,hori,verti
