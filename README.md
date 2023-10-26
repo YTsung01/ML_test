@@ -1,7 +1,7 @@
 ML_test
 ====================
 
-This project is a machine learning testing that uses IMU datas to detect falls.
+This project is a machine learning practice testing that uses IMU datas to detect falls.
 
 
 ## 目錄介绍
@@ -17,15 +17,14 @@ mean,std,var,max,min,kurtosis,skew,range
 
 DL_test
 ====================
+This project is a deep learning practice testing to  handwriting recognition
 
-
-深度學習的應用練習
-應用於手寫辨識
 
 
 ## 目錄介绍
 
 - **Data**
+  MNIST Dataset
 
 - **參數設定**
 - batch_size=128
