@@ -1,16 +1,13 @@
 ML_test
 ====================
 
-
-機器學習的應用練習
-應用於跌倒偵測
-Machine learning application exercises
-Used in fall detection
+This project is a machine learning testing that uses IMU datas to detect falls.
 
 
 ## 目錄介绍
 
 - **Data**
+- IMU data
 
 - **Features**
 6 axis:X,Y,Z,norm,hori,verti
