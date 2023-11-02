@@ -9,8 +9,8 @@ This project is a machine learning practice testing that uses IMU datas to detec
 - **Data** : IMU data
 
 - **Features**
-6 axis:X,Y,Z,norm,hori,verti
-mean,std,var,max,min,kurtosis,skew,range
+6 axis: X, Y, Z,norm,hori,verti
+mean,std,var,max,min,kurtosis,skew,range,Correlation coefficien
 
 - **Model** : Support Vector Machine, SVM
 - **Cross-Validation**: leave-one-out cross-validation, LOOCV
