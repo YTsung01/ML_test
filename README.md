@@ -13,6 +13,7 @@ This project is a machine learning practice testing that uses IMU datas to detec
 mean,std,var,max,min,kurtosis,skew,range
 
 - **Model** : Support Vector Machine, SVM
+- **Cross-Validation**: leave-one-out cross-validation, LOOCV
 
 
 DL_test
