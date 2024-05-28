@@ -42,7 +42,7 @@ This project is a deep learning practice testing to  handwriting recognition
   - ![DNN](https://github.com/YTsung01/ML_test/assets/132649559/81272b77-8c71-4565-b015-2b1beefa1824)
 
   - **CNN**
-- ![CNN](https://github.com/YTsung01/ML_test/assets/132649559/82420ddc-bfcb-4a21-857a-e5f5495f31e8)
+  - ![CNN](https://github.com/YTsung01/ML_test/assets/132649559/82420ddc-bfcb-4a21-857a-e5f5495f31e8)
 
 
   
