@@ -17,8 +17,9 @@ import time
 import numpy as np
 
 
-(x_train, y_train), (x_test, y_test)= mnist.load_data()
+(x_train, y_train), (x_test, y_test)= mnist.load_data() #下載mnist手寫辨識數據
 
+#%% 數據前處理
 x_train= x_train.reshape(60000, 784)
 x_test= x_test.reshape(10000,784)
 x_train= x_train.astype('float32')
@@ -28,25 +29,26 @@ x_test /= 255
 print(x_train.shape[0], 'train samples')
 print(x_test.shape[0], 'test samples')
 
-#%%
+#%% 模型參數
 
 batch_size= 128
 num_classes= 10
 epoch =10
 
+#%%答案前處理
 y_train= keras.utils.to_categorical(y_train, num_classes)
 y_test= keras.utils.to_categorical(y_test, num_classes)
 
-#%%
+#%% 模型型態
 model = Sequential()
 
-#%%
+#%%架設神經網路
 
 model.add(Dense(10, activation='softmax',  input_shape= (784,)))
 
-model.summary()
+model.summary()  #預覽細節
 
-#%%
+#%% 模型預編譯&訓練
 model.compile(loss='categorical_crossentropy',
               optimizer=RMSprop(),
               metrics=['accuracy'])
@@ -57,10 +59,11 @@ history= model.fit(x_train, y_train,
                    verbose=1,
                    validation_data=(x_test, y_test))
 
-#%%
+#%% 模型測試
 indice = slice(0,20)
 mini_test_x= list(x_test[indice])
 mini_test_y= list(y_test[indice])
+
 plt.figure()
 for idx,(testdata,labeldata) in enumerate(zip(mini_test_x,mini_test_y)):
     plt.subplot(4,5,idx+1)
@@ -68,11 +71,10 @@ for idx,(testdata,labeldata) in enumerate(zip(mini_test_x,mini_test_y)):
     predict_prob =model.predict(testdata)[0]
     predict_maxval = np.max(predict_prob)
     predict_class = predict_prob.tolist().index(predict_maxval)
-    title_obj = plt.title('predict_answer:' +str(predict_class))
+    title_obj = plt.title('predict_answer:' +str(predict_class), fontsize=7)
     plt.imshow(testdata.reshape(28,28))
     plt.axis("off")
 
-             
     label_prob = labeldata
     label_class=label_prob.tolist().index(1)
     #print('Quest:',idxt1, '\nTrue_Answer: ',label_class, '\nModel_predict:',predict_class,'\n')
